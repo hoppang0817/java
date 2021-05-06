@@ -8,27 +8,27 @@ public class UnitConverter {
 	public static final double INCH_PER_CENTIMETERS = 1 / CENTIMETERS_PER_INCH;
 
     public static double toPounds(double kilograms) {
-		return kilograms;
-        // 메소드 내부를 채워주세요
+		return POUND_PER_KILOGRAMS*kilograms;
+        // 메소드 내부를 채워주세요 kilogram->pound변환
     }
     public static double toKilograms(double pounds) {
-		return pounds;
+		return KILOGRAMS_PER_POUND*pounds;
         // 메소드 내부를 채워주세요
     }
     public static double toCentimeters(double inches) {
-		return inches;
+		return CENTIMETERS_PER_INCH*inches;
         // 메소드 내부를 채워주세요
     }
     public static double toInches(double centimeters) {
-		return centimeters;
+		return INCH_PER_CENTIMETERS*centimeters;
         // 메소드 내부를 채워주세요
     }
     public static double toFahrenheit(double celsius) {
-		return celsius;
+		return celsius*1.8+32;
         // 메소드 내부를 채워주세요
     }
     public static double toCelsius(double fahrenheit) {
-		return fahrenheit;
+		return (fahrenheit-32)*1.8;
         // 메소드 내부를 채워주세요
     }
 }
