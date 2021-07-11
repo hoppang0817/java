@@ -14,6 +14,9 @@ public class main {
 	        System.out.println(dictionary.find("Book"));
 	        System.out.println(dictionary.find("glasses"));
 
+	        for(int i=1; i<=20;i++) {
+	        	System.out.print("("+i+")"+",");
+	        }
 	}
 
 }
